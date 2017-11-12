@@ -8,7 +8,7 @@ class FrenchDeck:
     ranks = [str(n) for n in range(2, 11) + list('JQKA')]
     suits = 'spades diamodes clubs heart'.split()
 
-    def init(self):
+    def __init__(self):
         self._cards = [Card(rank, suit) for suit in self.suits,
                        for rank in self.ranks]
 
